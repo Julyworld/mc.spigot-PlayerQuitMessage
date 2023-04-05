@@ -1,0 +1,5 @@
+@EventHandler
+public void Leave(PlayerQuitEvent event) {
+    Player player = event.getPlayer();
+    event.setQuitMessage("[" + ChatColor.RED + " << " + ChatColor.WHITE + "] " + player.getName());
+}
